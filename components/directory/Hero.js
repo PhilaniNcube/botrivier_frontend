@@ -5,7 +5,7 @@ export const Hero = () => {
     <div className="w-full bg-green-500">
       <div className="container flex flex-col flex-wrap content-center justify-center p-4 py-20 mx-auto md:p-10">
         <h1 className="text-5xl antialiased font-semibold text-white leading-none text-center">
-          Business Directory
+          Directory
         </h1>
         <p className="pt-2 pb-8 text-xl antialiased text-center text-white">
           Find out services or businesses
@@ -18,7 +18,7 @@ export const Hero = () => {
           />
           <button
             type="button"
-            className="w-2/5 p-3 font-semibold rounded-r-lg sm:w-1/3 bg-white hover:bg-green-200 text-gray-900"
+            className="w-2/5 p-3 font-semibold rounded-r-lg sm:w-1/3 bg-white hover:bg-green-200 text-gray-800"
           >
             Search
           </button>

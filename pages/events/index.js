@@ -14,7 +14,7 @@ const index = ({ events }) => {
 
 export default index;
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const res = await fetch(`${API_URL}/events?_sort=date:DESC`);
   const events = await res.json();
 

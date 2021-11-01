@@ -16,7 +16,7 @@ const CategoryList = ({ categories }) => {
               href={`/category/${category.slug}`}
               passHref
             >
-              <div className="flex overflow-hidden rounded-lg bg-green-700 text-white">
+              <div className="flex overflow-hidden rounded-lg bg-blue-600 text-white">
                 <div className="flex items-center justify-between flex-1 p-3">
                   <p className="text-lg font-semibold">{category.title}</p>
                   <p>{category.businesses.length}</p>
