@@ -14,7 +14,7 @@ const directory = ({ categories }) => {
 
 export default directory;
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const res = await fetch(`${API_URL}/categories?_sort=title:ASC`);
   const categories = await res.json();
 
