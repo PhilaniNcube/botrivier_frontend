@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export const Header = () => {
   return (
-    <div className="relative px-4 pt-16 mx-auto max-w-7xl">
+    <div className="relative px-4 pt-2 mx-auto max-w-7xl">
       <div className="max-w-xl mx-auto lg:max-w-screen-xl">
         <div className="mb-16 lg:max-w-lg lg:mb-0">
           <div className="max-w-xl mb-6">
@@ -28,14 +28,7 @@ export const Header = () => {
                 Directory
               </a>
             </Link>
-            <Link href="/contact">
-              <a
-                aria-label=""
-                className="inline-flex items-center font-semibold transition-colors duration-200 text-green-700 hover:text-green-800"
-              >
-                Contact Us
-              </a>
-            </Link>
+            
           </div>
         </div>
       </div>

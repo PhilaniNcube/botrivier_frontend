@@ -40,15 +40,7 @@ const Category = ({ category }) => {
                       </div>
                     </div>
                     <div className="flex space-x-2">
-                      <ul className="px-6">
-                        {business.tags?.map((tag, index) => {
-                          return (
-                            <li className="text-xs" key={index}>
-                              {tag}
-                            </li>
-                          );
-                        })}
-                      </ul>
+                    
                     </div>
                   </div>
                 </div>

@@ -20,6 +20,6 @@ export async function getServerSideProps() {
 
   return {
     props: { events },
-    revalidate: 1,
+   
   };
 }

@@ -21,7 +21,7 @@ const features = [
 export const Content = () => {
   return (
     <div className="bg-white">
-      <div className="max-w-2xl mx-auto py-24 px-4 grid items-center grid-cols-1 gap-y-16 gap-x-8 sm:px-6 sm:py-32 lg:max-w-7xl lg:px-8 lg:grid-cols-2">
+      <div className="max-w-2xl mx-auto py-6 px-4 grid items-center grid-cols-1 gap-y-16 gap-x-8 sm:px-6 sm:py-6 lg:max-w-7xl lg:px-8 lg:grid-cols-2">
         <div>
           <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
             Who Is BCC?
@@ -55,17 +55,17 @@ export const Content = () => {
         </div>
         <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
           <img
-            src="/images/flowers.jpg"
+            src="/images/children.jpg"
             alt="flowers"
             className="bg-gray-100 rounded-lg h-full object-cover shadow"
           />
           <img
-            src="/images/lagoon.jpg"
+            src="/images/farmer.jpg"
             alt="lagoon"
             className="bg-gray-100 rounded-lg h-full object-cover shadow"
           />
           <img
-            src="/images/sunrise.jpg"
+            src="/images/aerial.jpg"
             alt="sunrise"
             className="bg-gray-100 rounded-lg h-full object-cover shadow"
           />
