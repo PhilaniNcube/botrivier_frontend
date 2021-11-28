@@ -5,10 +5,7 @@ import Link from 'next/link';
 const CategoryList = ({ categories }) => {
   return (
     <section className="md:px-8 dark:bg-coolGray-800 dark:text-coolGray-100">
-      <h2 className="p-4 text-center text-4xl md:text-4xl font-medium">
-        Categories
-      </h2>
-      <div className="container grid grid-cols-1 gap-6 m-4 mx-auto md:m-0 md:grid-cols-2 xl:grid-cols-4">
+      <div className="container grid grid-cols-1 gap-6 m-4 mx-auto md:m-0 md:grid-cols-2 xl:grid-cols-6 py-2">
         {categories.map((category) => {
           return (
             <Link
@@ -18,7 +15,7 @@ const CategoryList = ({ categories }) => {
             >
               <div className="flex overflow-hidden rounded-lg bg-blue-600 text-white">
                 <div className="flex items-center justify-between flex-1 p-3">
-                  <p className="text-lg font-semibold">{category.title}</p>
+                  <p className="text-md font-semibold">{category.title}</p>
                   <p>{category.businesses.length}</p>
                 </div>
               </div>

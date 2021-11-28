@@ -65,7 +65,7 @@ export const Navbar = () => {
                             item.current
                               ? 'bg-gray-900 text-white'
                               : 'text-white hover:bg-gray-700 hover:text-white',
-                            'px-3 py-2 rounded-md text-sm font-medium',
+                            'px-3 py-2 rounded-md text-md font-medium',
                           )}
                           aria-current={item.current ? 'page' : undefined}
                         >

@@ -8,14 +8,12 @@ const NewsLetterList = ({ newsletters }) => {
         return (
           <Fragment key={item.id}>
             <div className="bg-green-50 p-6 rounded-lg shadow-lg">
-              <h3 className="font-medium text-gray-600 text-lg uppercase">
+              <h3 className="font-medium text-gray-600 text-lg uppercase mb-4">
                 {item.title}
               </h3>
-              <p className="font-medium text-gray-400 text-sm mb-4">
-                Published On: {item.created_at}
-              </p>
+
               <Link href={`/newsletter/${item.slug}`}>
-                <a className="py-2 px-4 rounded text-white bg-green-600">
+                <a className="py-2 px-4 rounded text-white bg-green-600 mt-4">
                   Read More
                 </a>
               </Link>
