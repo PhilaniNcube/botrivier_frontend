@@ -42,6 +42,22 @@ export const Header = () => {
           backgroundPosition: 'center',
         }}
       ></div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 overflow-hidden max-w-7xl mx-auto mt-5 mb-2">
+        <img className="rounded w-full" src="/images/map.jpg" alt="map" />
+        <div className="w-full">
+          <h4 className="text-gray-600 font-medium text-3xl">
+            Map to Botriver
+          </h4>
+          <p>
+            Botrivier is a small town of approximately 10 000 people situated in
+            the Overberg region of the Western Cape in South Africa. Village in
+            the former Caledon district, 93 km southeast of Cape Town. It takes
+            its name from the Bot River on the west bank of which it is
+            situated.
+          </p>
+        </div>
+      </div>
     </Fragment>
   );
 };
