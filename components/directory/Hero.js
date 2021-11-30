@@ -9,7 +9,6 @@ export const Hero = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     router.push(`/category/search?term=${term}`);
-    setTerm('');
   };
 
   return (

@@ -7,11 +7,11 @@ export const Header = () => {
   return (
     <Fragment>
       <div className="relative px-4 pt-2">
-        <div className="mx-auto lg:max-w-screen-xl">
-          <div className="mb-16 lg:mb-0">
+        <div className="mx-auto lg:max-w-screen-xl grid grid-cols-1 md:grid-cols-2 gap-2">
+          <div className="mb-16 lg:mb-0 flex flex-col justify-center">
             <div className=" mb-6">
               <h1 className="mb-6 text-center font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-                Welcome To  Botrivier Community Committee
+                Welcome To Botrivier Community Committee
               </h1>
               <p className="text-base text-gray-700 text-center md:text-lg">
                 BCC is a non-political group of Botrivier residents working to
@@ -27,6 +27,9 @@ export const Header = () => {
                 </a>
               </Link>
             </div>
+          </div>
+          <div className="overflow-hidden">
+            <img className="w-full" alt="logo" src="/images/logo-large.jpg" />
           </div>
         </div>
       </div>
