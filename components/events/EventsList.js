@@ -1,4 +1,10 @@
+import React from 'react';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+
 export const EventsList = ({ events }) => {
+  const router = useRouter();
+
   return (
     <div className="bg-gray-100">
       <div className="relative px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
@@ -45,6 +51,7 @@ export const EventsList = ({ events }) => {
               <div
                 key={event.id}
                 className="flex flex-col justify-between overflow-hidden text-left transition-shadow duration-200 bg-white rounded shadow-xl group hover:shadow-2xl"
+                onClick={() => router.push(`/events/${event.slug}`)}
               >
                 <div className="p-5">
                   <p className="mb-2 font-bold text-green-800">{event.title}</p>
