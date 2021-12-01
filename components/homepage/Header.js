@@ -28,8 +28,8 @@ export const Header = () => {
               </Link>
             </div>
           </div>
-          <div className="overflow-hidden">
-            <img className="w-full" alt="logo" src="/images/logo-large.jpg" />
+          <div className="overflow-hidden w-full flex justify-center items-center">
+            <img className="w-1/2" alt="logo" src="/images/logo-large.jpg" />
           </div>
         </div>
       </div>
@@ -44,11 +44,11 @@ export const Header = () => {
       ></div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 overflow-hidden max-w-7xl mx-auto mt-5 mb-2">
-        <img className="rounded w-full" src="/images/map.jpg" alt="map" />
+        <div className="w-full flex justify-center items-center">
+          <img className="rounded w-1/2" src="/images/map.jpg" alt="map" />
+        </div>
         <div className="w-full">
-          <h4 className="text-gray-600 font-medium text-3xl">
-            Map to Botriver
-          </h4>
+          <h4 className="text-green-600 font-bold text-3xl">Map to Botriver</h4>
           <p>
             Botrivier is a small town of approximately 10 000 people situated in
             the Overberg region of the Western Cape in South Africa. Village in
