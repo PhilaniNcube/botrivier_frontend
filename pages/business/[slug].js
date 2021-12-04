@@ -8,7 +8,10 @@ const Business = ({ business }) => {
         <h1 className="text-4xl font-bold leading-none sm:text-5xl">
           {business.title}
         </h1>
-        <p className="px-8 mt-8 mb-12 text-lg">Contact: {business.contact}</p>
+        {business.contact && (
+          <p className="px-8 mt-8 mb-12 text-lg">Contact: {business.contact}</p>
+        )}
+
         <p className="px-8 mt-8 mb-12 text-lg">Tel: +{business.tel}</p>
       </div>
     </section>

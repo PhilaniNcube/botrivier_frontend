@@ -5,7 +5,10 @@ import qs from 'qs';
 import { API_URL } from '../../config';
 import CategoryList from '../../components/directory/CategoryList';
 
-const search = ({ categories, term }) => {
+const search = ({ categories, term, businesses }) => {
+  console.log(businesses);
+  console.log(categories);
+
   return (
     <div className="max-w-7xl mx-auto px-6 lg:px-0 flex flex-col space-y-4 mt-2">
       <h2 className="leading-5 font-medium text-2xl text-center">
@@ -19,6 +22,46 @@ const search = ({ categories, term }) => {
       ) : (
         <CategoryList categories={categories} />
       )}
+
+      <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-3">
+        {businesses.map((business) => {
+          return (
+            <div
+              key={business.id}
+              className="flex space-x-6 bg-green-200 p-2 rounded"
+            >
+              <div className="flex flex-col">
+                <Link href={`/business/${business.slug}`} passHref>
+                  <h4 className="text-xl font-semibold">{business.title}</h4>
+                </Link>
+                {business.contact && (
+                  <p className="font-medium text-md dark:text-coolGray-400">
+                    Contact: {business.contact}
+                  </p>
+                )}
+
+                <div className="flex space-x-2">
+                  <div>
+                    <div className="flex space-x-2">
+                      <p className="text-sm">Tel: {business.tel}</p>
+                    </div>
+                    {business.website && (
+                      <div className="flex space-x-2">
+                        <p className="text-sm">Website: {business.website}</p>
+                      </div>
+                    )}
+
+                    <div className="flex space-x-2">
+                      <p className="text-sm">Email: {business.email}</p>
+                    </div>
+                  </div>
+                  <div className="flex space-x-2"></div>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };
@@ -32,10 +75,20 @@ export async function getServerSideProps({ query: { term } }) {
     },
   });
 
+  const busQuery = qs.stringify({
+    _where: {
+      _or: [{ title_contains: term }],
+      _or: [{ contact_contains: term }],
+    },
+  });
+
   const res = await fetch(`${API_URL}/categories?${query}`);
   const categories = await res.json();
 
+  const busRes = await fetch(`${API_URL}/businesses?${busQuery}`);
+  const businesses = await busRes.json();
+
   return {
-    props: { categories, term },
+    props: { categories, term, businesses },
   };
 }

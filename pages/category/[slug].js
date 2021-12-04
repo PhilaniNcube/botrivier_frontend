@@ -23,18 +23,23 @@ const Category = ({ category }) => {
                   <Link href={`/business/${business.slug}`} passHref>
                     <h4 className="text-xl font-semibold">{business.title}</h4>
                   </Link>
+                  {business.contact && (
+                    <p className="font-medium text-md dark:text-coolGray-400">
+                      Contact: {business.contact}
+                    </p>
+                  )}
 
-                  <p className="font-medium text-md dark:text-coolGray-400">
-                    Contact: {business.contact}
-                  </p>
                   <div className="flex space-x-2">
                     <div>
                       <div className="flex space-x-2">
                         <p className="text-sm">Tel: {business.tel}</p>
                       </div>
-                      <div className="flex space-x-2">
-                        <p className="text-sm">Website: {business.website}</p>
-                      </div>
+                      {business.website && (
+                        <div className="flex space-x-2">
+                          <p className="text-sm">Website: {business.website}</p>
+                        </div>
+                      )}
+
                       <div className="flex space-x-2">
                         <p className="text-sm">Email: {business.email}</p>
                       </div>
