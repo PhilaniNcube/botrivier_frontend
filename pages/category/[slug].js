@@ -39,10 +39,11 @@ const Category = ({ category }) => {
                           <p className="text-sm">Website: {business.website}</p>
                         </div>
                       )}
-
-                      <div className="flex space-x-2">
-                        <p className="text-sm">Email: {business.email}</p>
-                      </div>
+                      {business.email && (
+                        <div className="flex space-x-2">
+                          <p className="text-sm">Email: {business.email}</p>
+                        </div>
+                      )}
                     </div>
                     <div className="flex space-x-2"></div>
                   </div>
