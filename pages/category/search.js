@@ -6,14 +6,16 @@ import { API_URL } from '../../config';
 import CategoryList from '../../components/directory/CategoryList';
 
 const search = ({ categories, term, businesses }) => {
-  console.log(businesses);
-  console.log(categories);
-
   return (
     <div className="max-w-7xl mx-auto px-6 lg:px-0 flex flex-col space-y-4 mt-2">
       <h2 className="leading-5 font-medium text-2xl text-center">
         Search Results for <span className="text-green-500">{term}</span>
       </h2>
+      <Link href="/directory" passHref>
+        <button className="bg-green-600 w-40 py-2 px-4 rounded-lg text-white">
+          Back To Directory
+        </button>
+      </Link>
       {categories.length === 0 ? (
         <h3>
           There are no categories that match your search term. Please search
