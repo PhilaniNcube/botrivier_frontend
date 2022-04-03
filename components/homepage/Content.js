@@ -7,15 +7,21 @@ const features = [
     description: 'Robbert Rijkers',
   },
   { name: 'Education', description: 'Rachel Browne' },
-  { name: 'Health Liason', description: 'Johannes Syms' },
+  { name: 'Health Liason', description: 'Manie Carelse' },
   { name: 'Environment', description: 'Lynn Schluter' },
   { name: 'Emerging Farmers', description: 'James Pheiffer' },
   { name: 'Business Development', description: 'Mark Townsend' },
-  { name: 'Sport', description: 'Solwethu Gonya' },
   { name: 'Cultural Events', description: 'Mathemba Sigunu' },
   { name: 'Housing & Development', description: 'Jayne Beaumont' },
   { name: 'Social Development', description: 'Ruth Odigie' },
-  { name: 'Churches', description: 'Siyabonga Kondile' },
+];
+
+const directors = [
+  { position: 'Chair', name: 'James Pheiffer' },
+  { position: 'Deputy Chair', name: 'Mike Moses' },
+  { position: 'Secretary', name: 'Ruth Odigie' },
+  { position: 'Treasurer', name: 'Alex Mondry' },
+  { position: 'Director', name: 'Rachel Browne' },
 ];
 
 export const Content = () => {
@@ -39,6 +45,23 @@ export const Content = () => {
             services available within our town so that we can support each
             other.
           </p>
+          <div>
+            <h3 className="mt-16 text-3xl sm:text-4xl font-medium">
+              BCV Directors
+            </h3>
+
+            <ul className="">
+              {directors.map((director, i) => (
+                <li
+                  key={i}
+                  className="text-gray-700 text-base flex flex-col space-y-2"
+                >
+                  <span className="font-medium">{director.name}</span>
+                  <span className="text-sm">{director.position}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
           <h3 className="mt-16 text-3xl sm:text-4xl font-medium">
             BCV Portfolios
           </h3>
