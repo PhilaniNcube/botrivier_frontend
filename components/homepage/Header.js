@@ -24,7 +24,7 @@ export const Header = () => {
             </div>
           </div>
           <div className="overflow-hidden w-full flex justify-center items-center">
-            <img className="w-2/3" alt="logo" src="/images/logo-large.jpg" />
+            <img className="w-2/3" alt="logo" src="/images/logo.jpeg" />
           </div>
         </div>
       </div>

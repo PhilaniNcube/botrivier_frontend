@@ -42,7 +42,7 @@ export const Navbar = () => {
                 <div className="flex-shrink-0 flex items-center">
                   <span className="block lg:hidden h-8 w-auto">
                     <Image
-                      src="/images/logo.jpg"
+                      src="/images/logo.jpeg"
                       alt="logo"
                       width={74.2}
                       height={41.7}
@@ -50,7 +50,7 @@ export const Navbar = () => {
                   </span>
                   <span className="hidden lg:block h-8 w-auto">
                     <Image
-                      src="/images/logo.jpg"
+                      src="/images/logo.jpeg"
                       alt="logo"
                       width={74.2}
                       height={41.7}
