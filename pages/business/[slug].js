@@ -12,7 +12,7 @@ const Business = ({ business }) => {
           <p className="px-8 mt-8 mb-12 text-lg">Contact: {business.contact}</p>
         )}
 
-        <p className="px-8 mt-8 mb-12 text-lg">Tel: +{business.tel}</p>
+        <p className="px-8 mt-8 mb-12 text-lg">Tel: {business.tel}</p>
       </div>
     </section>
   );
