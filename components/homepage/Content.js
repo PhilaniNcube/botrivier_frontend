@@ -46,7 +46,7 @@ export const Content = () => {
             other.
           </p>
           <div>
-            <h3 className="mt-16 text-3xl sm:text-4xl font-medium">
+            <h3 className="mt-16 text-3xl sm:text-4xl my-6 font-medium">
               BCV Directors
             </h3>
 
@@ -58,6 +58,7 @@ export const Content = () => {
                 >
                   <span className="font-medium">{director.name}</span>
                   <span className="text-sm">{director.position}</span>
+                  <hr />
                 </li>
               ))}
             </ul>
