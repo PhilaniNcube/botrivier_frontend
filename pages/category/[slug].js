@@ -13,7 +13,7 @@ const Category = ({ category }) => {
           </h3>
         </div>
         <Link href="/directory" passHref>
-          <button className="px-8 py-2">Back To Directory</button>
+          <button className="px-8 py-2 my-2">Back To Directory</button>
         </Link>
 
         <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-3">
