@@ -27,8 +27,8 @@ const directors = [
 export const Content = () => {
   return (
     <div className="bg-white">
-      <div className="max-w-2xl mx-auto py-6 px-4 grid items-center grid-cols-1 gap-y-16 gap-x-8 sm:px-6 sm:py-6 lg:max-w-7xl lg:px-8 lg:grid-cols-2">
-        <div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-8 max-w-6xl mx-auto">
+        <div className="flex flex-col justify-center">
           <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
             Who Is BCV?
           </h2>
@@ -45,17 +45,24 @@ export const Content = () => {
             services available within our town so that we can support each
             other.
           </p>
+        </div>
+
+        <img
+          src="/images/directors.jpeg"
+          alt="Directors"
+          className="bg-gray-100 rounded-lg h-full object-cover shadow"
+        />
+      </div>
+      <div className="max-w-2xl mx-auto px-4 grid items-center grid-cols-1 gap-y-16 gap-x-8 sm:px-6 sm:py-6 lg:max-w-7xl lg:px-8 lg:grid-cols-2">
+        <div>
           <div>
-            <h3 className="mt-16 text-3xl sm:text-4xl my-6 font-medium">
+            <h3 className="mt-4 text-3xl sm:text-4xl font-medium">
               BCV Directors
             </h3>
 
-            <ul className="">
+            <ul className="mt-2">
               {directors.map((director, i) => (
-                <li
-                  key={i}
-                  className="text-gray-700 text-base flex flex-col space-y-2"
-                >
+                <li key={i} className="text-gray-700 text-base flex flex-col">
                   <span className="font-medium">{director.name}</span>
                   <span className="text-sm">{director.position}</span>
                   <hr />
