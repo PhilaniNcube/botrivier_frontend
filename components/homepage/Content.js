@@ -24,10 +24,10 @@ export const Content = () => {
       <div className="max-w-2xl mx-auto py-6 px-4 grid items-center grid-cols-1 gap-y-16 gap-x-8 sm:px-6 sm:py-6 lg:max-w-7xl lg:px-8 lg:grid-cols-2">
         <div>
           <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-            Who Is BCC?
+            Who Is BCV?
           </h2>
           <p className="mt-4 text-gray-700">
-            BCC is a non-political group of Botrivier residents working on a
+            BCV is a non-political group of Botrivier residents working on a
             voluntary basis to bring improvements to our rural town. Our
             committee started in 2020, and we are a multi- cultural group from
             varying economic backgrounds.
@@ -35,12 +35,12 @@ export const Content = () => {
           <p className="mt-4 text-gray-700">
             Botrivier’s population has grown very quickly over the past 10
             years, and one of our biggest challenges as a town is unemployment.
-            Part of BCC’s focus is to create awareness about the skills and
+            Part of BCV’s focus is to create awareness about the skills and
             services available within our town so that we can support each
             other.
           </p>
           <h3 className="mt-16 text-3xl sm:text-4xl font-medium">
-            BCC Portfolios
+            BCV Portfolios
           </h3>
           <dl className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
             {features.map((feature) => (

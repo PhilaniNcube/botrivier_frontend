@@ -7,7 +7,7 @@ const contact = () => {
         <div className="py-6 md:py-0 md:px-6">
           <h1 className="text-4xl font-bold">Get in touch</h1>
           <p className="pt-2 pb-4">
-            To have your business listed on the BCC Directory, send us a message
+            To have your business listed on the BCV Directory, send us a message
           </p>
           <div className="space-y-4">
             <p className="flex items-center">

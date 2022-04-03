@@ -8,8 +8,8 @@ import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline';
 const navigation = [
   { name: 'Home', href: '/', current: false },
   { name: 'Directory', href: '/directory', current: false },
-  { name: 'Who Is BCC', href: '/whois', current: false },
-  { name: 'BCC Documents', href: '/documents', current: false },
+  { name: 'Who Is BCV', href: '/whois', current: false },
+  { name: 'BCV Documents', href: '/documents', current: false },
   { name: 'Projects', href: '/projects', current: false },
   { name: 'Events', href: '/events', current: false },
   { name: 'Newsletter', href: '/newsletter', current: false },

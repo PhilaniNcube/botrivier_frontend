@@ -17,7 +17,7 @@ export const Header = () => {
                 Welcome To Botrivier Community Volunteers NPC
               </h1>
               <p className="text-base text-gray-700 text-center md:text-lg">
-                BCC is a non-political group of Botrivier residents working to
+                BCV is a non-political group of Botrivier residents working to
                 improve communication in our beautiful rural town. This website
                 is an initiative to create a business hub.
               </p>
