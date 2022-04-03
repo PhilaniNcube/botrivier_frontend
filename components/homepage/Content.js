@@ -28,9 +28,9 @@ export const Content = () => {
           </h2>
           <p className="mt-4 text-gray-700">
             BCV is a non-political group of Botrivier residents working on a
-            voluntary basis to bring improvements to our rural town. Our
-            committee started in 2020, and we are a multi- cultural group from
-            varying economic backgrounds.
+            voluntary basis to bring improvements to our rural town. BCV started
+            in 2020, and we are a multi- cultural group from varying economic
+            backgrounds.
           </p>
           <p className="mt-4 text-gray-700">
             Botrivier’s population has grown very quickly over the past 10
